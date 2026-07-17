@@ -1,5 +1,6 @@
 # api/index.py
-# JXE Account Generator API - Separate JSON Categories
+# JXE Account Generator API – Separate JSON Categories
+# Deployable on Vercel
 
 import hmac
 import hashlib
@@ -486,7 +487,6 @@ def handler(request):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1:
-        # Simulate a request
         class FakeRequest:
             method = 'POST'
             def get_json(self):
